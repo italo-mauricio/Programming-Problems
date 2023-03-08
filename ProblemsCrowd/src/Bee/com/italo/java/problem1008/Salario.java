@@ -1,6 +1,9 @@
 package Bee.com.italo.java.problem1008;
 
 
+import java.util.Locale;
+import java.util.Scanner;
+
 /***
  * @author italo-mauricio
  *
@@ -20,9 +23,25 @@ package Bee.com.italo.java.problem1008;
  */
 
 
-
 public class Salario {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        scan.useLocale(Locale.US);
+        
+        int numFuncionario = scan.nextInt();
+        int numHoras = scan.nextInt();
+        double salario = scan.nextDouble();
 
+        System.out.println("NUMBER = " + numFuncionario);
+        System.out.println(String.format("SALARY = U$ %.2f" , (numHoras * salario)));
     }
 }
+
+/*
+    Resultado:
+        Linguagem: Java 14 (Open JDK 1.14.0)[+2s]
+        Tempo de execução: 0.163s
+        Tamanho: 566 Bytes
+        Submissão: 08/03/2023  21:24:15
+ */
+
