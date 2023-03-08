@@ -43,4 +43,5 @@ public class CalculaArea {
         Linguagem: Java 14 (Open JDK 1.14.0)[+2s]
         Tempo de execução: 0.416s
         Tamanho: 423 Bytes
+        Submissão: 08/03/2023  10:16:35
  */
