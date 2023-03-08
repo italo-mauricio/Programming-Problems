@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author italo-mauricio
  *
  *
- *                                              Média 1
+ *                                              Média Dois
  *
  *
  * Leia 3 valores, no caso, variáveis A, B e C, que são as três notas de um aluno. A seguir, calcule a média do aluno,
