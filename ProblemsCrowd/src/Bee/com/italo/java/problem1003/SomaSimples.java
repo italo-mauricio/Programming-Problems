@@ -44,4 +44,5 @@ public class SomaSimples {
         Linguagem: Java 14 (Open JDK 1.14.0)[+2s]
         Tempo de execução: 0.201s
         Tamanho: 374 Bytes
+        Submissão: 08/03/2023  12:04:32
  */
