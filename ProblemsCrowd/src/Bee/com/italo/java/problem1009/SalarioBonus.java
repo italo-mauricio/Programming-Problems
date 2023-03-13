@@ -19,6 +19,9 @@ import java.util.Scanner;
      * SAIDA:
      *       - Imprima o total que o funcionário deverá receber, conforme exemplo fornecido.
      *
+     *
+     *        EXEMPLO DE ENTRADA: JOÃO, 500.00, 1230.00                EXEMPLO DE SAÍDA: TOTAL = R$ 684.00
+     *  *     EXEMPLO DE ENTRADA: PEDRO, 700.00, 0.00                  EXEMPLO DE SAÍDA: TOTAL = R$ 700.00
      */
 
 
@@ -30,18 +33,20 @@ import java.util.Scanner;
             String nomeFuncionario = scan.nextLine();
             double salario = scan.nextDouble();
             double vendas = scan.nextDouble();
+            double totalVendas = (vendas * 0.15);
+            double total = salario + totalVendas;
 
-            System.out.println("TOTAL = " + " R$ " +);
+            System.out.println(String.format("TOTAL = R$ %.2f" , total));
         }
     }
 
 /*
     Resultado:
         Linguagem: Java 14 (Open JDK 1.14.0)[+2s]
-        Tempo de execução: 0.163s
-        Tamanho: 566 Bytes
-        Submissão: 08/03/2023  21:24:15
+        Tempo de execução: 0.170s
+        Tamanho: 613 Bytes
+        Submissão: 13/03/2023  14:37:28
  */
 
 
-}
+
