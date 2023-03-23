@@ -47,17 +47,27 @@ public class Area {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         scan.useLocale(Locale.US);
+        double A = scan.nextDouble(), B = scan.nextDouble(), C = scan.nextDouble();
+        final double pi = 3.14159;
 
-        double A = scan.nextDouble();
-        double B = scan.nextDouble();
-        double C = scan.nextDouble();
+        double triangulo = (A * C) / 2;
+        double circulo = pi * C * C;
+        double trapezio = ((A + B) * C) / 2;
+        double quadrado = B * B;
+        double retangulo = A * B;
 
-
-
-        System.out.println(String.format("TRIANGULO = %.3f"));
-        System.out.println(String.format("CIRCULO = %.3f"));
-        System.out.println(String.format("TRAPEZIO = %.3f"));
-        System.out.println(String.format("QUADRADO = %.3f"));
-        System.out.println(String.format("RETANGULO = %.3f"));
+        System.out.println(String.format("TRIANGULO: %.3f", triangulo));
+        System.out.println(String.format("CIRCULO: %.3f", circulo));
+        System.out.println(String.format("TRAPEZIO: %.3f", trapezio));
+        System.out.println(String.format("QUADRADO: %.3f", quadrado));
+        System.out.println(String.format("RETANGULO: %.3f", retangulo));
     }
 }
+
+/*
+    Resultado:
+        Linguagem: Java 14 (Open JDK 1.14.0)[+2s]
+        Tempo de execução: 0.264s
+        Tamanho: 960 Bytes
+        Submissão: 23/03/2023  20:07:46
+ */
