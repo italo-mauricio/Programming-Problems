@@ -1,7 +1,8 @@
 package Bee.com.italo.java.problem1011;
 
 
-import com.sun.jdi.PathSearchingVirtualMachine;
+
+import java.util.Scanner;
 
 /***
  * @author italo-mauricio
@@ -27,9 +28,22 @@ import com.sun.jdi.PathSearchingVirtualMachine;
 
 
 
-
 public class Esfera {
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
+
+        double raio = scan.nextDouble();
+        double volume = (4/3.0) * 3.14159 * Math.pow(raio, 3);
+        System.out.println(String.format("VOLUME = %.3f" , volume));
+
     }
 }
+
+/*
+    Resultado:
+        Linguagem: Java 14 (Open JDK 1.14.0)[+2s]
+        Tempo de execução: 0.150s
+        Tamanho: 390 Bytes
+        Submissão: 23/03/2023  19:41:07
+ */
